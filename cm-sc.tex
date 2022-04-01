@@ -1,0 +1,453 @@
+%% 
+%% Copyright 2019-2021 Elsevier Ltd
+%% 
+%% This file is part of the 'CAS Bundle'.
+%% --------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'CAS Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for cas-dc documentclass for 
+%% double column output.
+
+\documentclass[a4paper,fleqn,spanish]{cas-dc}
+% corte de palabras en español
+\usepackage[spanish]{babel}
+%\usepackage[style=numeric-comp]{biblatex}
+
+%\renewcommand{\abstractname}{Abstract} 
+%\renewcommand{\abstract}{Abstract} 
+\addto{\captionsspanish}{
+  \renewcommand{\abstractname}{ABSTRACT}
+}
+
+% If the frontmatter runs over more than one page
+% use the longmktitle option.
+
+%\documentclass[a4paper,fleqn,longmktitle]{cas-dc}
+
+%\usepackage[numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+\usepackage[authoryear,longnamesfirst]{natbib}
+
+%\usepackage{lipsum}
+
+% Borrar cover page
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+%%%Author macros
+\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
+\tsc{WGM}
+\tsc{QE}
+%%%
+
+% Uncomment and use as if needed
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newdefinition{rmk}{Remark}
+%\newproof{pf}{Proof}
+%\newproof{pot}{Proof of Theorem \ref{thm}}
+
+\renewcommand{\refname}{Referencias}
+
+\begin{document}
+
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+% Short title
+\shorttitle{KD in the ESN}    
+
+% Short author
+\shortauthors{J. Cerviño, J. L. Gobbe y L. Fernández}  
+
+% Main title of the paper
+%\title[mode = title]{Knowledge Discovery in the Enterprise Social Network}    
+%\title[mode = title]{Trabajo Práctico Final: Informe del Seminario Integrador}    
+
+\title[mode = title]{Modelado Conceptual de Smart Cities}    
+
+% Title footnote mark
+% eg: \tnotemark[1]
+%\tnotemark[1] 
+%
+%% Title footnote 1.
+%% eg: \tnotetext[1]{Title footnote text}
+%\tnotetext[1]{Nota al pie 1} 
+
+% First author
+%
+% Options: Use if required
+% eg: \author[1,3]{Author Name}[type=editor,
+%       style=chinese,
+%       auid=000,
+%       bioid=1,
+%       prefix=Sir,
+%       orcid=0000-0000-0000-0000,
+%       facebook=<facebook id>,
+%       twitter=<twitter id>,
+%       linkedin=<linkedin id>,
+%       gplus=<gplus id>]
+
+%\author[1]{<author name>}[<options>]
+
+\author[1]{Joaquín Cerviño}[
+  type=editor,
+  style=spanish,
+  auid=000,
+  bioid=1,
+  prefix=Lic.,
+  %orcid=0000-0000-0000-0000,
+  %facebook=<facebook id>,
+  %twitter=<twitter id>,
+  %linkedin=<linkedin id>,
+  %gplus=<gplus id>
+]
+
+% Corresponding author indication
+%\cormark[<corr mark no>]
+\cormark[1]
+
+% Footnote of the first author
+%\fnmark[<footnote mark no>]
+%\fnmark[1]
+
+% Email id of the first author
+\ead{cjoackin@gmail.com}
+
+% URL of the first author
+\ead[https://ioadeer.github.io]{https://ioadeer.github.io}
+
+% Credit authorship
+%\credit{Credit authorship details}
+% eg: \credit{Conceptualization of this study, Methodology, Software}
+\credit{Conceptualization of this study, Methodology, Writing}
+
+\author[2]{José Luis Gobbe}[
+  type=editor,
+  style=spanish,
+  auid=001,
+  bioid=2,
+  prefix=Ing.,
+]
+\author[3]{Lisandro Fernández}[
+  type=editor,
+  style=spanish,
+  auid=002,
+  bioid=3,
+  prefix=Lic.,
+]
+
+% Address/affiliation
+\affiliation[1-3]{
+  organization={
+    Universidad Tecnológica Nacional,
+    Facultad Regional Buenos Aires
+},
+  addressline={Medrano 951}, 
+  city={Buenos Aires},
+  % citysep={}, % Uncomment if no comma needed between city and postcode
+  postcode={C1179AAQ}, 
+  state={C.A.B.A},
+  country={Argentina}
+}
+
+
+% \author[2]{<author name>}[<options>]
+% 
+% % Footnote of the second author
+% \fnmark[2]
+% 
+% % Email id of the second author
+% \ead{}
+% 
+% % URL of the second author
+% \ead[url]{}
+% 
+% % Credit authorship
+% \credit{}
+% 
+% % Address/affiliation
+% \affiliation[<aff no>]{organization={},
+%             addressline={}, 
+%             city={},
+% %          citysep={}, % Uncomment if no comma needed between city and postcode
+%             postcode={}, 
+%             state={},
+%             country={}}
+% 
+
+% Corresponding author text
+\cortext[1]{Corresponding author}
+
+% Footnote text
+% \fntext[1]{Texto nota al pie autor}
+
+% For a title note without a number/mark
+\nonumnote{}
+
+\selectlanguage{english}
+% Here goes the abstract
+\begin{abstract}
+The constant increase in the use of the Enterprise Social Network (ESN), as a
+channel for organizational collaboration and the large volume of data produced,
+provides exceptional opportunities for decision-making in management. The study
+of this phenomenon is proposed in order to identify patterns of technological
+integration, data structures, techniques, and manipulation mechanisms involved
+in the Knowledge Discovery (KD) process in ESNs.
+\end{abstract}
+\selectlanguage{spanish}
+
+% Use if graphical abstract is present
+%\begin{graphicalabstract}
+%\includegraphics{}
+%\end{graphicalabstract}
+
+% Research highlights
+\begin{highlights}
+\item pepe
+\item pepe
+\item pepe
+\end{highlights}
+
+%Trabajo Práctico Final: INFORME DEL SEMINARIO INTEGRADOR
+
+% Keywords
+% Each keyword is seperated by \sep
+\begin{keywords}
+Conceptual Model\sep Smart Cities
+%\sep
+%pepe\sep
+\end{keywords}
+\maketitle
+% Main text
+\section{Proyecto Propuesta Trabajo Final de la Especialización}\label{TFE}
+
+Se propone el tema principal para el Trabajo Final de la Especialización en
+Ingeniería en Sistemas de Información de la Universidad Tecnológica Nacional
+Facultad Regional Buenos Aires (UTN.BA).
+
+%\subsection{Título tentativo}\label{titulo-TFE}
+\subsection{Descubrimiento del Conocimiento en la Red Social Empresarial - Un estudio de mapeo sistemático}\label{titulo-TFE}
+%\subsection{Objetivo del Trabajo Final de Especialidad}\label{objetivo-TFE}
+
+El presente proyecto de Trabajo Final de Especialidad propone el estudio de la
+Red Social Empresarial (Enterprise Social Network - ESN) con el objetivo de
+extraer información, su contextualización y refinamiento para el Descubrimiento
+del Conocimiento (Knowledge Discovery - KD).
+
+La propuesta de TFE es el desarrollo de un Estudio de Mapeo Sistemático
+(Systematic Mapping Study - SMS) de la producción académica internacional sobre
+los aspectos considerados al integrar tecnologías en las redes sociales desde
+el enfoque organizacional y el Descubrimiento del Conocimiento, revisar
+modelos, roles y comportamiento de agentes involucrados, creencias compartidas,
+normas, patrones de refinamiento y marcos de validación transversal.
+
+El tipo de revisión de literatura elegido es SMS dado que fomenta la
+disposición de las evidencias en el dominio con alto nivel de granularidad,
+ayuda a identificar grupos de estudios afines y evidencia áreas de vacancia
+vigentes para investigaciones futuras.
+
+
+\section{Proyecto Propuesta Tesis de Maestría}\label{tesis}
+
+En esta sección se presenta el objeto de estudio de la Tesis de la Maestría en
+Ingeniería en Sistemas de Información de UTN.BA. Se exponen las razones que
+justfican el estudio y se coteja con los antecedentes considerados hasta el
+momento.
+
+%\subsection{Título tentativo}\label{titulo-TESIS}
+\subsection{Descubrimiento del Conocimiento en la Red Social Empresarial}\label{titulo-TESIS}
+
+%\subsection{Descripción del problema - Identificación de Objeto}\label{que}
+
+El incremento constante en el uso de la Red Social Empresarial (Enterprise
+Social Network - ESN) \cite{Wehner_2017} como canal de colaboración
+organizacional y el gran volumen de datos producido, brinda oportunidades
+excepcionales de estudio para el análisis y la toma de decisiones en la gestión
+\cite{Schwade2018}.
+
+El proceso del Descubrimiento del Conocimiento (Knowledge Discovery - KD) en la
+ESN trata de extraer patrones en forma de reglas o funciones, a partir de los
+datos implicados en la creación e intercambio del contenido generado por el
+usuario \cite{Tao2020}. Esta tarea involucra analizar y derivar información
+nueva de estos aportes, por medio de la identificación de correlaciones entre
+términos, logrando explicitar conocimiento mediante la compresión del registro
+de eventos que producen los sistemas de colaboración de la organización
+\cite{OLeary2017}.
+
+El interés de esta investigación son los patrones de integración tecnológica,
+estructuras de datos, técnicas y mecanismos de manipulación involucrados en el
+proceso de extraer conocimiento en las ESN \cite{Hacker2017,Schwade2018}. Este
+fenómeno, que se manifiesta en las comunidades online de las organizaciones, es
+complejo, multifacético y orbita las tareas de: desarrollar, monitorear y
+mejorar procesos; describir objetivos, identificar variables implicadas y
+determinar constricciones o posibles alternativas de decisión.
+
+Este estudio versa sobre cómo comprender un gran lote de datos, una actividad
+relacionada con diferentes disciplinas: Recuperación de la Información
+(Information Retrieval - IR), que es el proceso de obtener información
+relevante de un sistema a partir de la recolección de muestras de los recursos
+del mismo. Los datos pueden ser explorados a través del Aprendizaje Automático
+(Machine Learning - ML), el subcampo de la Inteligencia Artificial cuyo
+compendio de algoritmos informáticos pueden evolucionar automáticamente a
+través de la experiencia. Análisis predictivo, del análisis estadístico
+aplicado a los problemas gerenciales, que es encontrar tendencias, patrones y
+relaciones utilizando datos cuantitativos. Comprender el significado semántico
+del contenido en los documentos para extraer información y organizarlos implica
+técnicas de Procesamiento del Lenguaje Natural (Natural Language Processing -
+NLP).
+
+La acumulación de datos, producto de la transferencia y creación de contenido,
+dentro de la ESN proporciona una fuente sustancial de noticias cruciales que
+pueden ser sometidas al KD. 
+
+% Numbered list
+% Use the style of numbering in square brackets.
+% If nothing is used, default style will be taken.
+%\begin{enumerate}[a)]
+%\item 
+%\item 
+%\item 
+%\end{enumerate}  
+
+% Unnumbered list
+%\begin{itemize}
+%\item 
+%\item 
+%\item 
+%\end{itemize}  
+
+% Description list
+%\begin{description}
+%\item[]
+%\item[] 
+%\item[] 
+%\end{description}  
+
+%% % Figure
+%% \begin{figure}[<options>]
+%% 	\centering
+%% 		\includegraphics[<options>]{}
+%% 	  \caption{}\label{fig1}
+%% \end{figure}
+%% 
+%% 
+%% \begin{table}[<options>]
+%% \caption{}\label{tbl1}
+%% \begin{tabular*}{\tblwidth}{@{}LL@{}}
+%% \toprule
+%%   &  \\ % Table header row
+%% \midrule
+%%  & \\
+%%  & \\
+%%  & \\
+%%  & \\
+%% \bottomrule
+%% \end{tabular*}
+%% \end{table}
+
+% Uncomment and use as the case may be
+%\begin{theorem} 
+%\end{theorem}
+
+% Uncomment and use as the case may be
+%\begin{lemma} 
+%\end{lemma}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%\section{pepe2 }\label{Pepe2}
+
+\subsection{¿Por qué es importante resolverlo?}\label{porque}
+
+La disponibilidad, facilidad de uso y escalabilidad de sistemas lo
+suficientemente robustos para manejar instancias a gran escala de registro de
+datos estructurados y no estructurados de múltiples fuentes ha creado entornos
+de trabajo fácil, colaborativo y distributivo.
+
+De la necesidad de mejorar a partir del proceso de intercambio, surge el
+desafío del volumen en constante aumento de los datos que se generan. El reto
+al que se enfrentan las organizaciones es la pericia de obtener provecho de
+toda esa información para identificar patrones y anomalías, diagnosticar
+problemas, señalar áreas y prescribir tareas de mejora \cite{Qi_2017}.
+
+La proliferación en el intercambio, la democratización de técnicas y procesos
+de análisis da origen a una generación de tecnologías y arquitecturas nuevas.
+Dicho proceso puede ser analizado para conseguir elementos explícitos que
+permitan a las organizaciones comprender y mejorar sus procesos. Siendo que los
+registros de la ESN no solo contienen la amplitud de noticias necesarias para
+entender el mismo componente, sino que incluye información retrospectiva del
+intercambio disponible para preparar estudios y evaluar hipótesis, aportando
+valor agregado al registro.
+
+\subsection{¿Qué han hecho otros y por qué la propuesta es superadora?}\label{otros}
+
+El proceso de extraer conocimiento de grandes volúmenes de datos es reconocido
+en la comunidad de investigadores como tópico clave en los sistemas de
+información y por muchas empresas comerciales significa una oportunidad para
+obtener ganancias \cite{Ahmed2017,Centobelli_2017,Cetto2018}. Esto ha sido
+aprovechado en diferentes ámbitos de la sociedad, en diversos tipos de
+sistemas, en este caso la ESN como pieza central de las comunidades online
+\cite{Engelbrecht2019,Hao2021,Nisar_2019}.
+
+Si bien muchos estudios empíricos y elaboraciones teóricas aportaron una
+variedad de factores específicos y medibles, desde la perspectiva de la Gestión
+de Conocimiento la crítica señala la sobre-especificidad de las características
+dinámicas y demanda evidencias \cite{Farnese2019,Nissen2019,Schilke2018}. Esto
+justifica la necesidad de estudios que organicen los diversos aportes con
+diferentes puntos de vista de las áreas conectadas al objeto de estudio,
+relacionando conceptos como KD en la ESN, ML y Minería de Procesos
+\cite{Pham2021}.
+
+Es preciso analizar estos antecedentes para desarrollar un marco conceptual de
+integración tecnológica que establezca alcances y mecanismos, dimensiones y
+estructuras de los datos disponibles, roles, normas, comportamientos y modelos
+validables hasta el momento \cite{Hacker2021,Namisango_2019}.
+Metodológicamente, se procede con la revisión analítica de contenido del estado
+actual del conocimiento. No se ha presentado previamente ningún estudio
+completo que proporcione una síntesis integral y sistemática con perspectiva en
+las capacidades dinámicas de las ESN evidenciando la riqueza de la fuente y en
+paralelo que las unifique en un modelo cohesivo y global en relación a KD.
+
+Con los resultados como prueba de concepto se expone el conocimiento que se
+puede derivar de las diferentes dimensiones de los estudios y cómo la
+combinación de estos puede mejorar la validez del análisis, evidenciar hasta dónde la
+investigación ha avanzado y dónde quedan tensiones sin resolver. Con base en
+este análisis, sugerir una agenda de investigación que señale el curso para
+estudios futuros.
+
+% To print the credit authorship contribution details
+% \printcredits
+
+%% Loading bibliography style file
+%\bibliographystyle{model1-num-names}
+%\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+%\bibliography{}
+\bibliography{cm-sc.bib}
+\bibliographystyle{plain}
+
+%% Biography
+%\bio{}
+%% Here goes the biography details.
+%\endbio
+%
+%\bio{pic1}
+%% Here goes the biography details.
+%\endbio
+
+\end{document}
+
