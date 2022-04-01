@@ -1,4 +1,4 @@
-# Conceptual mMdeling for Smart Cities
+# Conceptual Mdeling for Smart Cities
 
 ## LaTeX Windows Installation Guide 
 
