@@ -1,21 +1,28 @@
 %% 
-%% Copyright 2019-2021 Elsevier Ltd
+ % Copyright 2019-2021 Elsevier Ltd
+ % 
+ % This file is part of the 'CAS
+%Bundle'.
+ % --------------------------------------
+ % 
+ % It may be distributed
+%under the conditions of the LaTeX Project Public
+ % License, either version 1.2
+%of this license or (at your option) any
+ % later version. The latest version of
+%this license is in
+ % http://www.latex-project.org/lppl.txt
+ % and version 1.2
+%or later is part of all distributions of LaTeX
+ % version 1999/12/01 or later.
 %% 
-%% This file is part of the 'CAS Bundle'.
-%% --------------------------------------
-%% 
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version. The latest version of this license is in
-%% http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%% 
-%% The list of all files belonging to the 'CAS Bundle' is
-%% given in the file `manifest.txt'.
-%% 
-%% Template article for cas-dc documentclass for 
-%% double column output.
+ % The list of all files belonging to the 'CAS Bundle' is
+ % given in the
+%file `manifest.txt'.
+ % 
+ % Template article for cas-dc documentclass for 
+ %
+%double column output.
 
 \documentclass[a4paper,fleqn,spanish]{cas-dc}
 % corte de palabras en español
@@ -23,18 +30,18 @@
 %\usepackage[style=numeric-comp]{biblatex}
 
 %\renewcommand{\abstractname}{Abstract} 
-%\renewcommand{\abstract}{Abstract} 
+ \renewcommand{\abstract}{Abstract} 
 \addto{\captionsspanish}{
  \renewcommand{\abstractname}{ABSTRACT}
-}
+ }
 
 % If the frontmatter runs over more than one page
-% use the longmktitle option.
+ use the longmktitle option.
 
 %\documentclass[a4paper,fleqn,longmktitle]{cas-dc}
 
 %\usepackage[numbers]{natbib}
-%\usepackage[authoryear]{natbib}
+ \usepackage[authoryear]{natbib}
 \usepackage[authoryear,longnamesfirst]{natbib}
 
 \usepackage{lipsum}
@@ -45,23 +52,23 @@
 
 %%%Author macros
 \def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
-\tsc{WGM}
-\tsc{QE}
+ \tsc{WGM}
+ \tsc{QE}
 %%%
 
 % Uncomment and use as if needed
-%\newtheorem{theorem}{Theorem}
-%\newtheorem{lemma}[theorem]{Lemma}
-%\newdefinition{rmk}{Remark}
-%\newproof{pf}{Proof}
-%\newproof{pot}{Proof of Theorem \ref{thm}}
+ \newtheorem{theorem}{Theorem}
+% \newtheorem{lemma}[theorem]{Lemma}
+ \newdefinition{rmk}{Remark}
+% \newproof{pf}{Proof}
+ \newproof{pot}{Proof of Theorem \ref{thm}}
 
 \renewcommand{\refname}{Referencias}
 
 \begin{document}
 
 \let\WriteBookmarks\relax
-\def\floatpagepagefraction{1}
+ \def\floatpagepagefraction{1}
 \def\textpagefraction{.001}
 
 % Short title
@@ -71,53 +78,55 @@
 \shortauthors{J. Cerviño, J. L. Gobbe y L. Fernández} 
 
 % Main title of the paper
-%\title[mode = title]{Knowledge Discovery in the Enterprise Social Network} 
-%\title[mode = title]{Trabajo Práctico Final: Informe del Seminario Integrador} 
+ \title[mode = title]{Knowledge Discovery in the
+% Enterprise Social Network} 
+ \title[mode = title]{Trabajo Práctico Final:
+% Informe del Seminario Integrador} 
 
 \title[mode = title]{Modelado Conceptual de Ciudades Inteligentes} 
 
 % Title footnote mark
-% eg: \tnotemark[1]
-%\tnotemark[1] 
-%
-%% Title footnote 1.
-%% eg: \tnotetext[1]{Title footnote text}
-%\tnotetext[1]{Nota al pie 1} 
+ eg: \tnotemark[1]
+ \tnotemark[1] 
+% 
+% % Title footnote 1.
+ % eg: \tnotetext[1]{Title footnote text}
+% \tnotetext[1]{Nota al pie 1} 
 
 % First author
-%\author[1]{<author name>}[<options>]
-%
+ \author[1]{<author name>}[<options>]
+% 
 % Options: Use if required
-% eg: \author[1,3]{Author Name}[type=editor,
-%  style=chinese,
-%  auid=000,
-%  bioid=1,
-%  prefix=Sir,
-%  orcid=0000-0000-0000-0000,
-%  facebook=<facebook id>,
-%  twitter=<twitter id>,
-%  linkedin=<linkedin id>,
+ eg: \author[1,3]{Author Name}[type=editor,
+% style=chinese,
+ auid=000,
+ bioid=1,
+ prefix=Sir,
+ orcid=0000-0000-0000-0000,
+% facebook=<facebook id>,
+ twitter=<twitter id>,
+ linkedin=<linkedin id>,
 
 \author[1]{Joaquín Cerviño}[
  type=editor,
  style=spanish,
  auid=000,
  bioid=1,
- prefix=Lic.,
- %orcid=0000-0000-0000-0000,
- %facebook=<facebook id>,
- %twitter=<twitter id>,
- %linkedin=<linkedin id>,
- %gplus=<gplus id>
+prefix=Lic.,
+%orcid=0000-0000-0000-0000,
+ facebook=<facebook id>,
+ twitter=<twitter id>,
+%linkedin=<linkedin id>,
+ gplus=<gplus id>
 ]
 
 % Corresponding author indication
-%\cormark[<corr mark no>]
+ \cormark[<corr mark no>]
 \cormark[1]
 
 % Footnote of the first author
-%\fnmark[<footnote mark no>]
-%\fnmark[1]
+ \fnmark[<footnote mark no>]
+ \fnmark[1]
 
 % Email id of the first author
 \ead{cjoackin@gmail.com}
@@ -126,8 +135,9 @@
 \ead[https://ioadeer.github.io]{https://ioadeer.github.io}
 
 % Credit authorship
-%\credit{Credit authorship details}
-% eg: \credit{Conceptualization of this study, Methodology, Software}
+ \credit{Credit authorship details}
+ eg:
+% \credit{Conceptualization of this study, Methodology, Software}
 \credit{Conceptualization of this study, Methodology, Writing}
 
 \author[2]{José Luis Gobbe}[
@@ -135,90 +145,97 @@
  style=spanish,
  auid=001,
  bioid=2,
- prefix=Ing.,
-]
-\author[3]{Lisandro Fernández}[
+prefix=Ing.,
+ ]
+ \author[3]{Lisandro Fernández}[
  type=editor,
  style=spanish,
- auid=002,
+auid=002,
  bioid=3,
  prefix=Lic.,
-]
+ ]
 
 % Address/affiliation
 \affiliation[1-3]{
  organization={
  Universidad Tecnológica Nacional,
- Facultad Regional Buenos Aires
-},
+ Facultad
+Regional Buenos Aires
+ },
  addressline={Medrano 951}, 
  city={Buenos Aires},
- % citysep={}, % Uncomment if no comma needed between city and postcode
- postcode={C1179AAQ}, 
+% citysep={}, % Uncomment if no comma needed between city and postcode
+postcode={C1179AAQ}, 
  state={C.A.B.A},
  country={Argentina}
-}
+ }
 
 
 % \author[2]{<author name>}[<options>]
 % 
 % % Footnote of the second author
-% \fnmark[2]
+ \fnmark[2]
 % 
 % % Email id of the second author
-% \ead{}
+ \ead{}
 % 
 % % URL of the second author
-% \ead[url]{}
+ \ead[url]{}
 % 
 % % Credit authorship
-% \credit{}
+ \credit{}
 % 
 % % Address/affiliation
-% \affiliation[<aff no>]{organization={},
-%    addressline={}, 
-%    city={},
-% %   citysep={}, % Uncomment if no comma needed between city and postcode
-%    postcode={}, 
-%    state={},
-%    country={}}
+ \affiliation[<aff no>]{organization={},
+% addressline={}, 
+ city={},
+ %   citysep={}, % Uncomment if no comma needed
+% between city and postcode
+ postcode={}, 
+ state={},
+ country={}}
 % 
 
 % Corresponding author text
 \cortext[1]{Corresponding author}
 
 % Footnote text
-% \fntext[1]{Texto nota al pie autor}
+\fntext[1]{Texto nota al pie autor}
 
 % For a title note without a number/mark
 \nonumnote{}
 
 \selectlanguage{english}
 
-% Here goes the abstract
 \begin{abstract}
-\lipsum[1]
+Etiam euismod. Fusce facilisis lacinia dui. Suspendisse potenti. In mi erat,
+cursus id, nonummy sed, ullamcorper eget, sapien. Praesent pretium, magna in
+eleifend egestas, pede pede pretium lorem, quis consectetuer tortor sapien
+facilisis magna. Mauris quis magna varius nulla scelerisque imperdiet. Aliquam
+non quam. Aliquam porttitor quam a la- cus. Praesent vel arcu ut tortor cursus
+volutpat. In vitae pede quis diam bibendum placerat.
 \end{abstract}
+
 \selectlanguage{spanish}
 
 % Use if graphical abstract is present
-%\begin{graphicalabstract}
-%\includegraphics{}
-%\end{graphicalabstract}
+\begin{graphicalabstract}
+% \includegraphics{}
+\end{graphicalabstract}
 
 % Research highlights
 \begin{highlights}
-\item pepe
-\item pepe
-\item pepe
+ \item pepe
+ \item pepe
+ \item pepe
 \end{highlights}
 
 
 % Keywords
-% Each keyword is seperated by \sep
+ Each keyword is seperated by \sep
 \begin{keywords}
-Conceptual Model\sep Smart Cities
-\end{keywords}
+ Conceptual Model\sep Smart Cities
+ \end{keywords}
 
 \maketitle
 
@@ -231,30 +248,36 @@ Conceptual Model\sep Smart Cities
 %% Descripción del problema - Identificación de Objeto
 
 % Aca breve introduccion al los aparatados 
-% modelado conceptual y la ciudad inteligente.
+% modelado conceptual y la ciudad
+% inteligente.
+
+%Según Gartner,
+%el líder mundial empresa de
+%investigación y asesoramiento,
 
 En la practica, la ciudad inteligente procesa información sobre edificios,
 ciudadanos, dispositivos y activos a partir de datos recopilados de diferentes
 tipos de fuentes, para gestionar de manera eficiente los flujos urbanos a
-través de respuestas en tiempo real \cite{stubinger_understanding_2020}. 
+través de respuestas en tiempo real \cite{stubinger_understanding_2010}. 
 
+%\subsection{The smart city concept}\label{concepto}
 \subsection{La Ciudad Inteligente}\label{concepto}
 
 Las experiencias tempranas de ciudades inteligentes ocurren durante la década
 de 1970, cuando Los Ángeles realiza el primer proyecto de datos urbanos a
-gran escala \cite{stubinger_understanding_2020}. Desde principio del siglo XXI,
+gran escala \cite{stubinger_understanding_2010}. Desde principio del siglo XXI,
 el interés ha aumentado significativamente como consecuencia de la mejora
 tecnológica así como la poblacion en áreas urbanas, pero recien en la
 década de 2010 este concepto emergió y se discutió a fondo. A medida que
 avanza la implementación de la ciudad inteligente, es necesario saber cómo
 gestionar y mantener los recursos de los ecosistemas urbanos
-\cite{aljowder_systematic_2019} garantizando la sostenibilidad económica,
-social y ambiental general de estas areas \cite{stubinger_understanding_2020}.
+\cite{aljowder_systematic_2010} garantizando la sostenibilidad económica,
+social y ambiental general \cite{stubinger_understanding_2010} de estas areas.
 
 % unir y acortar estos 3 parrafos
 Aunque el concepto ha sido introducido y discutido desde hace algunos años,
 investigadores coinciden en que todavía no existe una definición del término
-ciudad inteligente \cite{wahab_systematic_2020}. La ciudad inteligente es todavía un
+ciudad inteligente [6, 9 a 12 de wahab]. La ciudad inteligente es todavía un
 concepto poco claro sin una nomenclatura estandarizada que pueda ser
 efectivamente describiéndose a sí mismo.
 
@@ -314,6 +337,7 @@ comprender mejor el concepto \cite{wahab_systematic_2020}.
 % inteligente y ven este tema desde diferentes perspectivas. 
 % \cite{Anthopoulos2015}.
 
+
 \subsection{Modelado Conceptual}\label{afirmacion}
 
 
@@ -322,7 +346,8 @@ comprender mejor el concepto \cite{wahab_systematic_2020}.
 %% ESto es mio se puede usar
 Metodológicamente, se procede con la revisión analítica de contenido del estado
 actual del conocimiento \cite{kitchenham_guidelines_2007,
-webster_analyzing_2002} siguiendo las pautas propuestas por \cite{Wolfswinkel2017}.
+webster_analyzing_2002} siguiendo las pautas propuestas por
+\cite{Wolfswinkel2017}.
 
 La revisión sistemática de la literatura es “una revisión sistemática, método
 explícito, completo y reproducible para identificar, evaluar y sintetizar el
@@ -330,15 +355,21 @@ cuerpo existente de trabajo completo y grabado producido por investigadores,
 eruditos y practicantes” \cite{Okoli2015}.
 
 Es sorprendente que no se presento previamente ningún estudio académico
-realice una visión general a gran escala basada en enfoques
-cuantitativos/cualitativos que proporcione una síntesis integral y sistemática
-con perspectiva en las capacidades dinámicas de la Ciudades Inteligentes
-evidenciando la riqueza de la fuente y en paralelo las relaciones con un
-Modelo Conceptual cohesivo y global.
+ realice
+una visión general a gran escala basada en enfoques
+ cuantitativos/cualitativos
+que proporcione una síntesis integral y sistemática
+ con perspectiva en las
+capacidades dinámicas de la Ciudades Inteligentes
+ evidenciando la riqueza de la
+fuente y en paralelo las relaciones con un
+ Modelo Conceptual cohesivo y
+global.
 
 %Google Scholar
-Se Enumera más de XXXX estudios en el campo del "Modelado Conceptual de ciudades
-inteligentes", que van desde modelos teóricos a marcos empíricos.
+Se Enumera más de XXXX estudios en el campo del "Modelado Conceptual de
+ciudades
+ inteligentes", que van desde modelos teóricos a marcos empíricos.
 %% ESto es mio se puede usar
 Considerando la diversidad y la dinámica de los manuscritos en este dominio,
 una revisión sistemática de la literatura es esencial para obtener el estado
@@ -349,13 +380,17 @@ señalar el curso para estudios futuros.
 
 % Con los resultados como prueba de concepto se expone el conocimiento que se
 % puede derivar de las diferentes dimensiones de los estudios y cómo la
-% combinación de estos puede mejorar la validez del análisis, evidenciar hasta dónde la
-% investigación ha avanzado y dónde quedan tensiones sin resolver.
+% combinación de estos puede mejorar la validez del análisis, evidenciar hasta
+% dónde la
+ investigación ha avanzado y dónde quedan tensiones sin resolver.
 % 
 % Esta investigación rastreará y analizará la literatura
-% disponible sobre los modelos de conceptual de la ciudad inteligente con el
-% objetivo de aportar claridad al tema y contribuir a la
-% investigación científica sobre el área de estudio.
+ disponible sobre los
+% modelos de conceptual de la ciudad inteligente con el
+ objetivo de aportar
+% claridad al tema y contribuir a la
+ investigación científica sobre el área de
+% estudio.
 
 \subsection{Inclusion and exclusion criteria}\label{criterio}
 
@@ -364,7 +399,7 @@ Criterios de Inclusion y exclusion.
 \subsection{Determine search sources}\label{fuentes}
 
 buscadores
-Fuentes de busqueda
+ Fuentes de busqueda
 
 
 \subsection{Define search string}\label{cadena}
@@ -377,29 +412,32 @@ Cadena de Busqueda.
 Busqueda y seleccion.
 
 
-\section{RESULTS ANALYSIS ó Categorization of Smart City Literature ó Findings}\label{resultados}
+\section{RESULTS ANALYSIS ó Categorization of Smart City Literature ó
+Findings}\label{resultados}
 
 Wahab habla de Dimensions of smart cities \cite{wahab_systematic_2020}
 
 Stubinger habla de categorias \cite{stubinger_understanding_2020}
-Economy,
+ Economy,
 Governance,
-People,
-Environment,
-Infrastructure,
-Technology,
-Living,
+ People,
+ Environment,
+ Infrastructure,
+ Technology,
+ Living,
 Mobility,
-Water and Waste,
-Security, 
-Agriculture.
+ Water and Waste,
+ Security, 
+ Agriculture.
 
 
-\subsection{Conceptual model of smart cities identified from the scientific literature}\label{sci-lit}
+\subsection{Conceptual model of smart cities identified from the scientific
+literature}\label{sci-lit}
 
 %\lipsum[3-4]
 
-\subsection{The regions/countries covered by the related studies}\label{regiones}
+\subsection{The regions/countries covered by the related
+studies}\label{regiones}
 
 %\lipsum[3-4]
 
@@ -409,7 +447,8 @@ Agriculture.
 %\lipsum[3-4]
 
 
-\subsection{Smart city alignment with the Sustainable Development Goals (SDGs)}\label{sustentabilidad}
+\subsection{Smart city alignment with the Sustainable Development Goals
+(SDGs)}\label{sustentabilidad}
 
 %\lipsum[2-4]
 
@@ -425,16 +464,16 @@ Agriculture.
 
 
 % To print the credit authorship contribution details
-% \printcredits
+ %\printcredits
 
 %% Loading bibliography style file
-%\bibliographystyle{model1-num-names}
+ \bibliographystyle{model1-num-names}
 %\bibliographystyle{cas-model2-names}
 
 % Loading bibliography database
-%\bibliography{}
+ \bibliography{}
 \bibliography{cm-sc.bib}
-\bibliographystyle{plain}
+ \bibliographystyle{plain}
 
 %% Biography
 %\bio{}
@@ -442,65 +481,71 @@ Agriculture.
 %\endbio
 %
 %\bio{pic1}
-%% Here goes the biography details.
-%\endbio
+ % Here goes the biography details.
+ %\endbio
 
 \end{document}
 
 
-% Numbered list
-% Use the style of numbering in square brackets.
-% If nothing is used, default style will be taken.
-%\begin{enumerate}[a)]
-%\item 
-%\item 
-%\item 
-%\end{enumerate} 
-
-% Unnumbered list
-%\begin{itemize}
-%\item 
-%\item 
-%\item 
-%\end{itemize} 
-
-% Description list
-%\begin{description}
-%\item[]
-%\item[] 
-%\item[] 
-%\end{description} 
-
-%% % Figure
-%% \begin{figure}[<options>]
-%% 	\centering
-%% 		\includegraphics[<options>]{}
-%% 	 \caption{}\label{fig1}
-%% \end{figure}
+%% % Numbered list
+%%  Use the style of numbering in square brackets.
+%%  If nothing is
+%% % used, default style will be taken.
+%%  \begin{enumerate}[a)]
+%%  \item 
+%%  \item 
+%% % \item 
+%%  \end{enumerate} 
 %% 
+%% % Unnumbered list
+%%  \begin{itemize}
+%%  \item 
+%%  \item 
+%%  \item 
+%%  \end{itemize} 
 %% 
-%% \begin{table}[<options>]
-%% \caption{}\label{tbl1}
-%% \begin{tabular*}{\tblwidth}{@{}LL@{}}
-%% \toprule
-%% & \\ % Table header row
-%% \midrule
-%% & \\
-%% & \\
-%% & \\
-%% & \\
-%% \bottomrule
-%% \end{tabular*}
-%% \end{table}
-
-% Uncomment and use as the case may be
-%\begin{theorem} 
-%\end{theorem}
-
-% Uncomment and use as the case may be
-%\begin{lemma} 
-%\end{lemma}
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
+%% % Description list
+%%  \begin{description}
+%%  \item[]
+%%  \item[] 
+%%  \item[] 
+%% \end{description} 
+%% 
+%% %% % Figure
+%%  % \begin{figure}[<options>]
+%%  % 	\centering
+%%  %
+%% %\includegraphics[<options>]{}
+%%  % 	 \caption{}\label{fig1}
+%%  % \end{figure}
+%%  % 
+%% %% 
+%%  % \begin{table}[<options>]
+%%  % \caption{}\label{tbl1}
+%%  %
+%% %\begin{tabular*}{\tblwidth}{@{}LL@{}}
+%%  % \toprule
+%%  % & \\ % Table header row
+%%  %
+%% %\midrule
+%%  % & \\
+%%  % & \\
+%%  % & \\
+%%  % & \\
+%%  % \bottomrule
+%%  % \end{tabular*}
+%%  %
+%% %\end{table}
+%% 
+%% % Uncomment and use as the case may be
+%%  \begin{theorem} 
+%%  \end{theorem}
+%% 
+%% % Uncomment and use as the case may be
+%%  \begin{lemma} 
+%%  \end{lemma}
+%% 
+%% %% The Appendices part is started with the command \appendix;
+%%  % appendix
+%% %sections are then done as normal sections
+%%  % \appendix
