@@ -30,6 +30,7 @@
 \usepackage{graphicx}
 
 \usepackage{url}
+\usepackage{multirow}
 
 \urldef{\mailsa}\path|{joaquincervino, joseluisgobe, lisandrofernandez}@frba.utn.edu.ar|
 \newcommand{\keywords}[1]{\par\addvspace\baselineskip
@@ -96,20 +97,21 @@ discusión, análisis y actividades relacionadas \cite{Delcambre2019}.
 El modelado conceptual y el razonamiento sobre modelos son capacidades humanas
 para observar, comprender e influir en el entorno. A pesar de innumerables
 intentos, no existe una definición estricta de uso general de lo que constituye
-el modelado conceptual y lo que no.  Los intentos de definición son variantes de
+el modelado conceptual.  Los intentos de definición son variantes de
 “Modelado conceptual es modelado con conceptos” e introducir estos conceptos a
 través de marcos ontológicos más o menos rígidos, o mediante una explicación
 simple usando lenguaje natural \cite{Mawr2020}.
 
-Los modelos conceptuales son modelos de representaciones mentales conceptuales
-que agentes construyen, usan y manipulan durante la actividad cognitiva.  Como
-tales, no son modelos de un dominio dado, sino modelos de cómo concebimos ese
-dominio. Artefactos producidos con la intención deliberada de describir una
-realidad conceptualizada. establecioendo contratos de sentido, con el requisito
-previo de que esté conectado a una conceptualización que proporcione su
-semántica conceptual. Esto artefactos se comprometen con una conceptualización,
-es decir, la cosmovisión capturada por esa conceptualización. Los modelos
-conceptuales a captan y comunican un determinado compromiso ontológico
+Los modelos conceptuales son modelos de representaciones mentales que agentes
+construyen, usan y manipulan durante la actividad cognitiva.  Como tales, no
+son modelos de un dominio dado, sino modelos de cómo concebimos ese dominio. Se
+los puede caracterizar como artefactos producidos con la intención deliberada
+de describir una realidad conceptualizada. De esta forma, se puede afirmar que
+establecen contratos de sentido, con el requisito previo de que se exprese una
+conexión un modelo que proporcione una semántica conceptual. Estos artefactos
+se comprometen con una conceptualización, es decir, la cosmovisión capturada
+por dicha conceptualización. En definitiva, se puede afirmar que los modelos
+conceptuales captan y comunican un determinado compromiso ontológico
 \cite{Guarino2020}.
 
 En la práctica,
@@ -121,42 +123,28 @@ sobre dispositivos, ciudadanos y activos.
 %\cite{stubinger_understanding_2020}
 
 Las experiencias tempranas de ciudades inteligentes se remontan a la década de
-1970, cuando Los Ángeles realiza el primer proyecto de bigdata urbana.  Cerca
-del comienzo del siglo XXI el interés aumento significativamente como
+1970, cuando Los Ángeles realiza el primer proyecto de bigdata urbana. Cerca
+del comienzo del siglo XXI el interés aumentó significativamente como
 consecuencia de la mejora tecnológica y el crecimiento de la poblacion en áreas
 urbanas, pero a partir de la década de 2010 es cuando este concepto emerge y se
 comienza a discutir \cite{stubinger_understanding_2020}.
 
-Como primeros esfuerzos 
-algunas organizaciones 
-desarrollaron marcos de evaluación e indicadores de medición,
-por ejemplo
-el Instituto Británico de Normas
-(BSI) estableció
-%“PAS 181”, que es
-un marco de buenas prácticas para la
-transformación de ciudades inteligentes
-y
-La Organización Internacional de Normalización (ISO) emitió
-varias normas de requisitos para el desarrollo de comunidades y
-ciudades inteligentes
-%infraestructura
-\cite{aljowder_systematic_2019}.
+Como primeros esfuerzos algunas organizaciones desarrollaron marcos de
+evaluación e indicadores de medición. Instituto Británico de Normas (BSI)
+estableció un marco de buenas prácticas para la transformación de ciudades
+inteligentes y La Organización Internacional de Normalización (ISO) emitió
+varias normas de requisitos para el desarrollo de comunidades y ciudades
+inteligentes \cite{aljowder_systematic_2019}.
 
-A medida que
-la ciudad inteligente se despliega, es necesario saber cómo
-gestionar y mantener los recursos de los ecosistemas urbanos
-garantizando la sustentabilidad económica,
-social y ambiental general de estas áreas \cite{aljowder_systematic_2019,stubinger_understanding_2020}.
+A medida que la ciudad inteligente se despliega, es necesario saber cómo
+gestionar y mantener los recursos de los ecosistemas urbanos garantizando la
+sustentabilidad económica, social y ambiental general de estas áreas
+\cite{aljowder_systematic_2019,stubinger_understanding_2020}.
 
-% unir y acortar estos 3 parrafos
-Apesar el concepto ha sido discutido durante varias decadas,
-% investigadores coinciden en que
-todavía no existe una definición del término
-\cite{wahab_systematic_2020}.
-La ciudad inteligente es todavía un
-concepto poco claro sin una nomenclatura estandarizada que pueda ser
-efectiva describiéndose a sí mismo.
+Apesar el concepto ha sido discutido durante varias decadas, todavía no existe
+una definición del término \cite{wahab_systematic_2020}. La ciudad inteligente
+es todavía un concepto poco claro sin una nomenclatura estandarizada que pueda
+ser efectiva describiéndose a sí mismo.
 
 La gran mayoría de la literatura define “ciudad inteligente” como
 infraestructura que cumple las siguientes tres características:
@@ -165,23 +153,12 @@ infraestructura que cumple las siguientes tres características:
 (iii) se implementan tecnologías de la información y la comunicación (TIC)
 \cite{stubinger_understanding_2020}.
 
-Pero la falta de un marco y criterios estandarizados
-% que contribuye a una ciudad inteligente,
-hace que la mayoría de las ciudades inteligentes basen su
-desarrollo en un marco auto-regulado.
-Los involucrados en este proceso
-% de las ciudades inteligentes 
-no serán capaces de adecuar correctamente el concepto
-% de ciudad inteligente
-en sí mismo sin comprender sus fundamentos.
-Además, de la necesidad de contar con un marco estandarizado
-%para poder aplicarlo como guía en proyectos a futuro,
-es importante establecer un plan completo y
-una concisa comprensión sobre el dominio.
-% de ciudad inteligente,
-%ya que sirve como un terreno común de lo que se trata la ciudad inteligente.
-
-%Una mejor comprensión del concepto,
+De todas formas, la falta de un marco y criterios estandarizados hace que la
+mayoría de las ciudades inteligentes basen su desarrollo en un marco
+autoregulado. Los involucrados en este proceso no serán capaces de adecuar
+correctamente el concepto en sí mismo sin comprender sus fundamentos. Además,
+de la necesidad de contar con un marco estandarizado es importante establecer
+un plan completo y una concisa comprensión sobre el dominio.
 
 La determinación de un modelo conceptual de ciudad inteligente habilitará a
 profesionales, políticos y a la academia a establecer mejores estrategias de
@@ -218,18 +195,63 @@ desarrollo y asegurará que que multiples iniciativas estén alineadas.
 % inteligente y ven este tema desde diferentes perspectivas. 
 % \cite{Anthopoulos2015}.
 
-Es llamativo que no se presentó previamente ningún estudio académico
-realice una visión general a gran escala basada en enfoques
-cuantitativos/cualitativos que proporcione una síntesis integral y sistemática
-con perspectiva en las capacidades dinámicas de la Ciudades Inteligentes
-evidenciando la riqueza de la fuente y en paralelo las relaciones con un
-marco conceptual cohesivo y global.
+% Es llamativo que no se presentó previamente ningún estudio académico
+% realice una visión general a gran escala basada en enfoques
+% cuantitativos/cualitativos que proporcione una síntesis integral y sistemática
+% con perspectiva en las capacidades dinámicas de la Ciudades Inteligentes
+% evidenciando la riqueza de la fuente y en paralelo las relaciones con un
+% marco conceptual cohesivo y global.
 
-%\section{Planificación del SMS}
-\section{Metodología}\label{metodo}
+% objetivo del articulo
 
-Metodológicamente, se procede con la revisión analítica de contenido del estado
-actual del conocimiento \cite{kitchenham_guidelines_2007,webster_analyzing_2002,Wolfswinkel2017}.
+El objetivo del presente artículo es realizar un mapeo sistemático de la
+literatura, o SMS por sus siglas en inglés, para establecer el estado del arte
+de las contribuciones al modelado conceptual de las Smart Cities. El SMS fue realizado adoptando la metodología descripta por Kitchenham \cite{kitchenham_guidelines_2007}.
+
+% estructura del articulo
+
+
+%\section{Metodología}\label{metodo}
+%
+%Metodológicamente, se procede con la revisión analítica de contenido del estado
+%actual del conocimiento \cite{kitchenham_guidelines_2007,webster_analyzing_2002,Wolfswinkel2017}.
+
+\section{Planificación del SMS}\label{metodo}
+
+En la presente sección se detalla el protocolo del SMS definiendo preguntas de
+investigación (PI), estrategia de búsqueda, selección de publicaciones,
+criterios de inclusión y exclusión, proceso de selección, formulario de
+extracción y el proceso de síntesis de datos.
+
+El objetivo del SMS es dar respuesta a la pregunta de investigación (PI) :
+\textit{¿Cuál es el estado del arte en el modelado conceptual de Smart
+Cities?}. Se considera que dicha pregunta principal puede desglosarse en una
+serie de preguntas secundarias para ordenar la búsqueda. Éstas son detalladas a
+continuación en la\textbf{Tabla 1}.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{| c | c | c |}
+    \hline
+    & Preguntas & Motivación \\ 
+    \hline
+    \textbf{PI1} & ¿En qué dominios      & Ordenar aportes \\
+                 & se realizaron         & de acuerdo a la taxonomía \\ 
+                 & contribuciones?       & review de quien era\\
+    \hline
+    \textbf{PI2} & ¿Qué lenguajes        & Relevar distintos\\
+                 & de modelado           & lenguajes de modelado \\ 
+                 & se utilizan ?         & ya sea UML otros\\
+    \hline
+    \textbf{PI3} & ¿Qué tipos de         & Ordenar aportes \\
+                 & investigación existen & de acuerdo a la taxonomía \\ 
+                 & en los artículos?     & propuesta por Weringa \\
+    \hline
+%  \textbf{PI2} & ¿En qué dominios se realizaron contribuciones?                                 &            \\ \hline
+%  \textbf{PI3} & ¿Qué lenguajes de modelado se utilizan?                                        &            \\ \hline
+%  \textbf{PI4} & ¿Qué tipo de investigación existen en los artículos?                           &            \\ \hline
+  \end{tabular}
+  \end{table}
 
 %Google Scholar
 %% Se Enumera más de XXXX estudios en el campo del "Modelado Conceptual de ciudades
@@ -237,34 +259,23 @@ actual del conocimiento \cite{kitchenham_guidelines_2007,webster_analyzing_2002,
 
 %% Esto es mio se puede usar
 %y la dinámica
-Los escritos en este dominio
-son de  diversidad considerable
-%una revisión sistemática de la literatura
-para obtener el estado
-actual de la investigación,
-identificar, evaluar y sintetizar
-el cuerpo completo de trabajo registrado y producido
-por investigadores, eruditos y practicantes
-es esencial
-%La revisión sistemática de la literatura es
-una revisión sistemática con método explícito, completo y reproducible
-\cite{Okoli2015},
-En base en este análisis,
-señalar tendencias, hallazgos sustantivos
-% sugerir una agenda de investigación que
-e indicar el curso para estudios futuros.
+%Los escritos en este dominio
+%son de  diversidad considerable
+%%una revisión sistemática de la literatura
+%para obtener el estado
+%actual de la investigación,
+%identificar, evaluar y sintetizar
+%el cuerpo completo de trabajo registrado y producido
+%por investigadores, eruditos y practicantes
+%es esencial
+%%La revisión sistemática de la literatura es
+%una revisión sistemática con método explícito, completo y reproducible
+%\cite{Okoli2015},
+%En base en este análisis,
+%señalar tendencias, hallazgos sustantivos
+%% sugerir una agenda de investigación que
+%e indicar el curso para estudios futuros.
 
-\begin{table}[]
-  \begin{tabular}{|l|l|l|}
-  \hline
-               & Preguntas                                                                      & Motivación \\ \hline
-  \textbf{P}   & ¿Cuál es el estado del arte en el modelado conceptual de Smart Cities?         &            \\ \hline
-  \textbf{PI1} & ¿Qué tipo de contribuciones existen en el modelado conceptual de Smart Cities? &            \\ \hline
-  \textbf{PI2} & ¿En qué dominios se realizaron contribuciones?                                 &            \\ \hline
-  \textbf{PI3} & ¿Qué lenguajes de modelado se utilizan?                                        &            \\ \hline
-  \textbf{PI4} & ¿Qué tipo de investigación existen en los artículos?                           &            \\ \hline
-  \end{tabular}
-  \end{table}
 
 % Con los resultados como prueba de concepto se expone el conocimiento que se
 % puede derivar de las diferentes dimensiones de los estudios y cómo la

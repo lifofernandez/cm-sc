@@ -1,92 +1,49 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  18 MAY 2022 14:43
- restricted system commands enabled.
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.4.24)  18 MAY 2022 17:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **cm-sc.tex
 (./cm-sc.tex
 LaTeX2e <2021-11-15> patch level 1
-Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
-Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
-ollection.
-luaotfload | conf : Root cache directory is "C:/Users/pc2/AppData/Local/MiKTeX/l
-uatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2022-02-24.lua" from kpse-res
-olved path "C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/fon
-tloader-2022-02-24.lua".
-Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.119
-Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
-Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/Users/pc2/AppData/Local/MiKTeX/l
-uatex-cache/generic/names".
-Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
-Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
-Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
-Inserting `luaotfload.harf.glyphstream' at position 1 in `glyph_stream_provider'
-.
-Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
-er'.
-Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
-Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
-Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
-Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
-Lua-only attribute luaotfload.letterspace_done = 3
-Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
-font'.
-Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
-t'.
-Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
-_font'.
-Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
-t_unsafe'.
-Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
-'.
-Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2022-05-04>
-Inserting `tracingstacklevels' at position 1 in `input_level_string'. (./llncs.
-cls
+L3 programming layer <2022-02-24> (./llncs.cls
 Document Class: llncs 2010/07/12 v2.17 
  LaTeX document class for Lecture Notes in Computer Science
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls
+(/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from C:/Users/pc2/AppData/Local/MiK
-TeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen137
+\bibindent=\dimen138
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count191
+\c@tracingmulticols=\count193
 \mult@box=\box50
-\multicol@leftmargin=\dimen138
-\c@unbalance=\count192
-\c@collectmore=\count193
-\doublecol@number=\count194
-\multicoltolerance=\count195
-\multicolpretolerance=\count196
-\full@width=\dimen139
-\page@free=\dimen140
-\premulticols=\dimen141
-\postmulticols=\dimen142
+\multicol@leftmargin=\dimen139
+\c@unbalance=\count194
+\c@collectmore=\count195
+\doublecol@number=\count196
+\multicoltolerance=\count197
+\multicolpretolerance=\count198
+\full@width=\dimen140
+\page@free=\dimen141
+\premulticols=\dimen142
+\postmulticols=\dimen143
 \multicolsep=\skip49
 \multicolbaselineskip=\skip50
 \partial@page=\box51
 \last@line=\box52
-\maxbalancingoverflow=\dimen143
+\maxbalancingoverflow=\dimen144
 \mult@rightbox=\box53
 \mult@grightbox=\box54
 \mult@firstbox=\box55
@@ -127,20 +84,20 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
-\c@minrows=\count197
-\c@columnbadness=\count198
-\c@finalcolumnbadness=\count199
-\last@try=\dimen144
-\multicolovershoot=\dimen145
-\multicolundershoot=\dimen146
+\c@minrows=\count199
+\c@columnbadness=\count266
+\c@finalcolumnbadness=\count267
+\last@try=\dimen145
+\multicolovershoot=\dimen146
+\multicolundershoot=\dimen147
 \mult@nat@firstbox=\box93
 \colbreak@box=\box94
-\mc@col@check@num=\count266
+\mc@col@check@num=\count268
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/oberdiek/aliascnt.sty
+(/usr/share/texmf-dist/tex/latex/oberdiek/aliascnt.sty
 Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
 )
-\c@chapter=\count267
+\c@chapter=\count269
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
 LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
@@ -152,162 +109,68 @@ LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
 LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
 LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
 LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
-\tocchpnum=\dimen147
-\tocsecnum=\dimen148
-\tocsectotal=\dimen149
-\tocsubsecnum=\dimen150
-\tocsubsectotal=\dimen151
-\tocsubsubsecnum=\dimen152
-\tocsubsubsectotal=\dimen153
-\tocparanum=\dimen154
-\tocparatotal=\dimen155
-\tocsubparanum=\dimen156
-\@tempcntc=\count268
-\fnindent=\dimen157
-\c@@inst=\count269
-\c@@auth=\count270
-\c@auco=\count271
-\instindent=\dimen158
+\tocchpnum=\dimen148
+\tocsecnum=\dimen149
+\tocsectotal=\dimen150
+\tocsubsecnum=\dimen151
+\tocsubsectotal=\dimen152
+\tocsubsubsecnum=\dimen153
+\tocsubsubsectotal=\dimen154
+\tocparanum=\dimen155
+\tocparatotal=\dimen156
+\tocsubparanum=\dimen157
+\@tempcntc=\count270
+\fnindent=\dimen158
+\c@@inst=\count271
+\c@@auth=\count272
+\c@auco=\count273
+\instindent=\dimen159
 \authrun=\box95
 \authorrunning=\toks16
 \tocauthor=\toks17
 \titrun=\box96
 \titlerunning=\toks18
 \toctitle=\toks19
-\c@theorem=\count272
-\c@case=\count273
-\c@conjecture=\count274
-\c@corollary=\count275
-\c@definition=\count276
-\c@example=\count277
-\c@exercise=\count278
-\c@lemma=\count279
-\c@note=\count280
-\c@problem=\count281
-\c@property=\count282
-\c@proposition=\count283
-\c@question=\count284
-\c@solution=\count285
-\c@remark=\count286
-\headlineindent=\dimen159
+\c@theorem=\count274
+\c@case=\count275
+\c@conjecture=\count276
+\c@corollary=\count277
+\c@definition=\count278
+\c@example=\count279
+\c@exercise=\count280
+\c@lemma=\count281
+\c@note=\count282
+\c@problem=\count283
+\c@property=\count284
+\c@proposition=\count285
+\c@question=\count286
+\c@solution=\count287
+\c@remark=\count288
+\headlineindent=\dimen160
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty
-Package: babel 2022/04/30 3.74 The Babel package
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count289
+\U@D=\dimen161
+\l@unhyphenated=\language87
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\l@afrikaans=\language2
-Package babel Info: Non-standard hyphenation setup on input line 118.
-\l@ancientgreek=\language3
-\l@armenian=\language4
-\l@assamese=\language5
-\l@basque=\language6
-\l@belarusian=\language7
-\l@bengali=\language8
-\l@bokmal=\language9
-\l@bulgarian=\language10
-\l@catalan=\language11
-\l@churchslavonic=\language12
-\l@classiclatin=\language13
-\l@coptic=\language14
-\l@croatian=\language15
-\l@czech=\language16
-\l@danish=\language17
-\l@dutch=\language18
-\l@esperanto=\language19
-\l@estonian=\language20
-\l@ethiopic=\language21
-\l@finnish=\language22
-\l@french=\language23
-\l@friulan=\language24
-\l@galician=\language25
-\l@georgian=\language26
-\l@german=\language27
-\l@greek=\language28
-\l@gujarati=\language29
-\l@hindi=\language30
-\l@hungarian=\language31
-\l@icelandic=\language32
-\l@indonesian=\language33
-\l@interlingua=\language34
-\l@irish=\language35
-\l@italian=\language36
-\l@kannada=\language37
-\l@kurmanji=\language38
-\l@latin=\language39
-\l@latvian=\language40
-\l@lithuanian=\language41
-\l@liturgicallatin=\language42
-\l@macedonian=\language43
-\l@malayalam=\language44
-\l@marathi=\language45
-\l@mongolian=\language46
-\l@mongolianlmc=\language47
-\l@monogreek=\language48
-\l@ngerman=\language49
-\l@nynorsk=\language50
-\l@occitan=\language51
-\l@oriya=\language52
-\l@pali=\language53
-\l@panjabi=\language54
-\l@piedmontese=\language55
-\l@polish=\language56
-\l@portuguese=\language57
-\l@romanian=\language58
-\l@romansh=\language59
-\l@russian=\language60
-\l@sanskrit=\language61
-\l@serbian=\language62
-\l@serbianc=\language63
-\l@slovak=\language64
-\l@slovenian=\language65
-\l@spanish=\language66
-\l@swedish=\language67
-\l@swissgerman=\language68
-\l@tamil=\language69
-\l@telugu=\language70
-\l@thai=\language71
-\l@turkish=\language72
-\l@turkmen=\language73
-\l@ukenglish=\language74
-\l@ukrainian=\language75
-\l@uppersorbian=\language76
-\l@usenglishmax=\language77
-\l@welsh=\language78
-\babelcatcodetablenum=\catcodetable12
-\bbl@pattcodes=\catcodetable13
-)
-\babel@savecnt=\count287
-\U@D=\dimen160
-\l@unhyphenated=\language79
+\bbl@dirlevel=\count290
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute4
-)
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/babel-spanish/spanish.ldf
+(/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks20
-\es@quotdepth=\count288
+\es@quotdepth=\count291
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/generic/hyph-utf8/loadhyph/load
-hyph-es.tex UTF-8 Spanish hyphenation patterns
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/generic/hyph-utf8/patterns/tex/
-hyph-es.tex))))
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+))
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks21
 \symAMSa=\mathgroup4
@@ -316,137 +179,168 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 107.
- (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
-File: luatex.def 2021/06/01 v1.2c Graphics/color driver for luatex
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
-) (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-luate
-x.def
-File: l3backend-luatex.def 2022-04-20 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count289
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count292
+\multirow@dima=\skip52
+\bigstrutjot=\dimen164
+)
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box97
 ) (./cm-sc.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 )
-\openout1 = cm-sc.aux
+\openout1 = `cm-sc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen163
+\scratchcounter=\count294
+\scratchdimen=\dimen165
 \scratchbox=\box98
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\nofMPsegments=\count295
+\nofMParguments=\count296
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen164
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen166
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks24
-)
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-bas
-e.sty
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
 
- (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
 
 
-(C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 113.
+LaTeX Warning: Citation `Delcambre2019' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `Mawr2020' on page 1 undefined on input line 103.
+
+
+LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 115.
+
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 1 undefined on i
+nput line 130.
 
 [1
 
 
-{C:/Users/pc2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 257.
+LaTeX Warning: Citation `aljowder_systematic_2019' on page 2 undefined on input
+ line 137.
 
 
-Overfull \hbox (48.20497pt too wide) in paragraph at lines 258--267
-[][] 
- []
+LaTeX Warning: Citation `aljowder_systematic_2019' on page 2 undefined on input
+ line 142.
 
-LaTeX Info: Redefining \. on input line 267.
-LaTeX Info: Redefining \% on input line 267.
-[2] (./cm-sc.bbl
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 2 undefined on i
+nput line 142.
+
+
+LaTeX Warning: Citation `wahab_systematic_2020' on page 2 undefined on input li
+ne 145.
+
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 2 undefined on i
+nput line 154.
+
+
+LaTeX Warning: Citation `kitchenham_guidelines_2007' on page 2 undefined on inp
+ut line 209.
+
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+[2]
+
+LaTeX Warning: Citation `wahab_systematic_2020' on page 3 undefined on input li
+ne 340.
+
+(./cm-sc.bbl
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
  [3]
 Underfull \hbox (badness 10000) in paragraph at lines 58--62
-[]\TU/lmr/m/n/9 Joost F. Wolfs-win-kel, El-fi Furt-mue-ller, and Ce-les-te P.M. Wil-de-rom.
+[]\OT1/cmr/m/n/9 Joost F. Wolfs-win-kel, El-fi Furt-mue-ller, and Ce-les-te P.M
+. Wil-de-rom.
  []
 
 
-Underfull \hbox (badness 4060) in paragraph at lines 58--62
-\TU/lmr/m/n/9 Using groun-ded theory as a method for ri-go-rously re-vie-wing li
--te-ra-tu-re.
+Underfull \hbox (badness 4084) in paragraph at lines 58--62
+\OT1/cmr/m/n/9 Using groun-ded theory as a method for ri-go-rously re-vie-wing 
+li-te-ra-tu-re.
  []
 
 )
-LaTeX Info: Redefining \. on input line 403.
-LaTeX Info: Redefining \% on input line 403.
+LaTeX Info: Redefining \. on input line 414.
+LaTeX Info: Redefining \% on input line 414.
  [4] (./cm-sc.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -454,31 +348,27 @@ LaTeX Info: Redefining \% on input line 12.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-)
-
-Here is how much of LuaTeX's memory you used:
- 4132 strings out of 477742
- 100000,460012 words of node,token memory allocated
- 1532 words of node memory still in use:
-   6 hlist, 1 vlist, 1 rule, 22 disc, 12 glue, 9 kern, 101 glyph, 15 attribute, 
-53 glue_spec, 9 attribute_list, 1 write nodes
-   avail lists: 1:1,2:581,3:165,4:23,5:260,6:37,7:8013,8:63,9:249,10:22,11:1231
- 24756 multiletter control sequences out of 65536+600000
- 55 fonts using 3895567 bytes
- 55i,8n,60p,209b,500s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman
-5-regular.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/pub
-lic/lm/lmroman10-bold.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/
-opentype/public/lm/lmroman9-italic.otf><//?/c:/users/pc2/appdata/local/programs/
-miktex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/users/pc2/appdata/loca
-l/programs/miktex/fonts/opentype/public/lm/lmmono9-regular.otf><//?/c:/users/pc2
-/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><//
-?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-
-regular.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/publi
-c/lm/lmroman12-bold.otf>
-Output written on cm-sc.pdf (4 pages, 62673 bytes).
-
-PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ ) 
+Here is how much of TeX's memory you used:
+ 3829 strings out of 478276
+ 57649 string characters out of 5853013
+ 372619 words of memory out of 5000000
+ 22016 multiletter control sequences out of 15000+600000
+ 476744 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,9n,62p,222b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt9.pfb>
+Output written on cm-sc.pdf (4 pages, 150238 bytes).
+PDF statistics:
+ 62 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
