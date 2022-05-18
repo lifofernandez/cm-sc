@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  18 MAY 2022 14:40
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  18 MAY 2022 14:43
  restricted system commands enabled.
 **cm-sc.tex
 (./cm-sc.tex
@@ -348,8 +348,8 @@ File: l3backend-luatex.def 2022-04-20 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count289
 \l__pdf_internal_box=\box97
 ) (./cm-sc.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = cm-sc.aux
 
@@ -401,19 +401,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
 
  (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
 
 
 (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 112.
+LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 113.
 
 [1
 
@@ -421,15 +421,15 @@ LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 112.
 {C:/Users/pc2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 256.
+               Default added (so using `htbp') on input line 257.
 
 
-Overfull \hbox (48.20497pt too wide) in paragraph at lines 257--266
+Overfull \hbox (48.20497pt too wide) in paragraph at lines 258--267
 [][] 
  []
 
-LaTeX Info: Redefining \. on input line 266.
-LaTeX Info: Redefining \% on input line 266.
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
 [2] (./cm-sc.bbl
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -445,12 +445,16 @@ Underfull \hbox (badness 4060) in paragraph at lines 58--62
  []
 
 )
-LaTeX Info: Redefining \. on input line 402.
-LaTeX Info: Redefining \% on input line 402.
+LaTeX Info: Redefining \. on input line 403.
+LaTeX Info: Redefining \% on input line 403.
  [4] (./cm-sc.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
-))
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
 
 Here is how much of LuaTeX's memory you used:
  4132 strings out of 477742
