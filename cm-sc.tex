@@ -1,291 +1,130 @@
-%% 
-%% Copyright 2019-2021 Elsevier Ltd
-%% 
-%% This file is part of the 'CAS Bundle'.
-%% --------------------------------------
-%% 
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version. The latest version of this license is in
-%% http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%% 
-%% The list of all files belonging to the 'CAS Bundle' is
-%% given in the file `manifest.txt'.
-%% 
-%% Template article for cas-dc documentclass for 
-%% double column output.
 
-\documentclass[a4paper,fleqn,spanish]{cas-dc}
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper,spanish]{llncs}
 % corte de palabras en español
 \usepackage[spanish]{babel}
 %\usepackage[style=numeric-comp]{biblatex}
 
-%\renewcommand{\abstractname}{Abstract} 
-%\renewcommand{\abstract}{Abstract} 
 \addto{\captionsspanish}{
- \renewcommand{\abstractname}{ABSTRACT}
+ \renewcommand{\abstractname}{Resumen}
 }
 
-% If the frontmatter runs over more than one page
-% use the longmktitle option.
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
 
-%\documentclass[a4paper,fleqn,longmktitle]{cas-dc}
+\usepackage{url}
 
-%\usepackage[numbers]{natbib}
-%\usepackage[authoryear]{natbib}
-\usepackage[authoryear,longnamesfirst]{natbib}
-
-\usepackage{lipsum}
-
-% Borrar cover page
-\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
-\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
-
-%%%Author macros
-\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
-\tsc{WGM}
-\tsc{QE}
-%%%
-
-% Uncomment and use as if needed
-%\newtheorem{theorem}{Theorem}
-%\newtheorem{lemma}[theorem]{Lemma}
-%\newdefinition{rmk}{Remark}
-%\newproof{pf}{Proof}
-%\newproof{pot}{Proof of Theorem \ref{thm}}
-
-\renewcommand{\refname}{Referencias}
+\urldef{\mailsa}\path|{joaquincervino, joseluisgobe, lisandrofernandez}@frba.utn.edu.ar|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
 
 \begin{document}
 
-\let\WriteBookmarks\relax
-\def\floatpagepagefraction{1}
-\def\textpagefraction{.001}
+\mainmatter  % start of an individual contribution
 
-% Short title
-\shorttitle{KD in the ESN} 
+% first the title is needed
+\title{Modelado Conceptual y Ciudades Inteligentes, Un Mapeo Sistemático de Literatura}
 
-% Short author
-\shortauthors{J. Cerviño, J. L. Gobbe y L. Fernández} 
+% a short form should be given in case it is too long for the running head
+\titlerunning{Modelado Conceptual y Ciudades Inteligentes}
 
-% Main title of the paper
-%\title[mode = title]{Knowledge Discovery in the Enterprise Social Network} 
-%\title[mode = title]{Trabajo Práctico Final: Informe del Seminario Integrador} 
-
-\title[mode = title]{Modelado Conceptual de Ciudades Inteligentes} 
-
-% Title footnote mark
-% eg: \tnotemark[1]
-%\tnotemark[1] 
+% the name(s) of the author(s) follow(s) next
 %
-%% Title footnote 1.
-%% eg: \tnotetext[1]{Title footnote text}
-%\tnotetext[1]{Nota al pie 1} 
-
-% First author
-%\author[1]{<author name>}[<options>]
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
 %
-% Options: Use if required
-% eg: \author[1,3]{Author Name}[type=editor,
-%  style=chinese,
-%  auid=000,
-%  bioid=1,
-%  prefix=Sir,
-%  orcid=0000-0000-0000-0000,
-%  facebook=<facebook id>,
-%  twitter=<twitter id>,
-%  linkedin=<linkedin id>,
-
-\author[1]{Joaquín Cerviño}[
- type=editor,
- style=spanish,
- auid=000,
- bioid=1,
- prefix=Lic.,
- %orcid=0000-0000-0000-0000,
- %facebook=<facebook id>,
- %twitter=<twitter id>,
- %linkedin=<linkedin id>,
- %gplus=<gplus id>
-]
-
-% Corresponding author indication
-%\cormark[<corr mark no>]
-\cormark[1]
-
-% Footnote of the first author
-%\fnmark[<footnote mark no>]
-%\fnmark[1]
-
-% Email id of the first author
-\ead{cjoackin@gmail.com}
-
-% URL of the first author
-\ead[https://ioadeer.github.io]{https://ioadeer.github.io}
-
-% Credit authorship
-%\credit{Credit authorship details}
-% eg: \credit{Conceptualization of this study, Methodology, Software}
-\credit{Conceptualization of this study, Methodology, Writing}
-
-\author[2]{José Luis Gobbe}[
- type=editor,
- style=spanish,
- auid=001,
- bioid=2,
- prefix=Ing.,
-]
-\author[3]{Lisandro Fernández}[
- type=editor,
- style=spanish,
- auid=002,
- bioid=3,
- prefix=Lic.,
-]
-
-% Address/affiliation
-\affiliation[1-3]{
- organization={
- Universidad Tecnológica Nacional,
- Facultad Regional Buenos Aires
-},
- addressline={Medrano 951}, 
- city={Buenos Aires},
- % citysep={}, % Uncomment if no comma needed between city and postcode
- postcode={C1179AAQ}, 
- state={C.A.B.A},
- country={Argentina}
+\author{Joaquin Cerviño, Jose Luis Gobe y Lisandro Fernández}
+%
+\authorrunning{Modelado Conceptual y Ciudades Inteligentes}
+% (feature abused for this document to repeat the title also on left hand pages)
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{
+  Universidad Tecnológica Nacional,
+  Facultad Regional Buenos Aires\\
+  Medrano 951, Buenos Aires, C1179AAQ
+  C.A.B.A, Argentina.
+  \mailsa\url{https://www.frba.utn.edu.ar/}
 }
 
 
-% \author[2]{<author name>}[<options>]
-% 
-% % Footnote of the second author
-% \fnmark[2]
-% 
-% % Email id of the second author
-% \ead{}
-% 
-% % URL of the second author
-% \ead[url]{}
-% 
-% % Credit authorship
-% \credit{}
-% 
-% % Address/affiliation
-% \affiliation[<aff no>]{organization={},
-%    addressline={}, 
-%    city={},
-% %   citysep={}, % Uncomment if no comma needed between city and postcode
-%    postcode={}, 
-%    state={},
-%    country={}}
-% 
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
 
-% Corresponding author text
-\cortext[1]{Corresponding author}
-
-% Footnote text
-% \fntext[1]{Texto nota al pie autor}
-
-% For a title note without a number/mark
-\nonumnote{}
-
-\selectlanguage{english}
-
-% Here goes the abstract
-\begin{abstract}
-Etiam gravida eros id faucibus fermentum. Nullam posuere ultrices magna, eu
-lacinia tellus sollicitudin at. Vestibulum sollicitudin vulputate tellus, vitae
-condimentum ipsum eleifend vel. Suspendisse potenti. Suspendisse eget ante
-gravida, rhoncus eros ut, blandit dui. Proin tincidunt diam at auctor cursus.
-Morbi vehicula quis libero at laoreet. Fusce accumsan velit eu dui scelerisque,
-non finibus libero posuere.
-\end{abstract}
-
-\selectlanguage{spanish}
-
-% Use if graphical abstract is present
-%\begin{graphicalabstract}
-%\includegraphics{}
-%\end{graphicalabstract}
-
-% Research highlights
-\begin{highlights}
-\item pepe
-\item pepe
-\item pepe
-\end{highlights}
-
-
-% Keywords
-% Each keyword is seperated by \sep
-\begin{keywords}
-Conceptual Model\sep Smart Cities
-\end{keywords}
+\toctitle{Modelado Conceptual y Ciudades Inteligentes}
+\tocauthor{Un Mapeo Sistemático de Literatura}
 
 \maketitle
-
-% Main text
-
-\section{Introducción}\label{intro}
-% Objetivo del Trabajo Final de Especialidad
-\lipsum[12]
-
-\section{Contexto}\label{marco}
-%% Descripción del problema - Identificación de Objeto
+\begin{abstract}
+The abstract should summarize the contents of the paper and should
+contain at least 70 and at most 150 words. It should be written using the
+\emph{abstract} environment.
+\keywords{We would like to encourage you to list your keywords within
+the abstract section}
+\end{abstract}
 
 
-%La forma inversa de decir esto es que todos
+\section{Introducción}
 
-%En la práctica,
+
+EL modelado conceptual busca representar conceptualizaciones y abstracciones
+relevantes del mundo real de tal manera que sea posible apoyar la comunicación,
+discusión, análisis y actividades relacionadas \cite{Delcambre2019}.
+
+El modelado conceptual y el razonamiento sobre modelos son capacidades humanas
+para observar, comprender e influir en el entorno. A pesar de innumerables
+intentos, no existe una definición estricta de uso general de lo que constituye
+el modelado conceptual y lo que no.  Los intentos de definición son variantes de
+“Modelado conceptual es modelado con conceptos” e introducir estos conceptos a
+través de marcos ontológicos más o menos rígidos, o mediante una explicación
+simple usando lenguaje natural \cite{Mawr2020}.
+
+Los modelos conceptuales son modelos de representaciones mentales conceptuales
+que agentes construyen, usan y manipulan durante la actividad cognitiva.  Como
+tales, no son modelos de un dominio dado, sino modelos de cómo concebimos ese
+dominio. Artefactos producidos con la intención deliberada de describir una
+realidad conceptualizada. establecioendo contratos de sentido, con el requisito
+previo de que esté conectado a una conceptualización que proporcione su
+semántica conceptual. Esto artefactos se comprometen con una conceptualización,
+es decir, la cosmovisión capturada por esa conceptualización. Los modelos
+conceptuales a captan y comunican un determinado compromiso ontológico
+\cite{Guarino2020}.
+
+En la práctica,
 La ciudad inteligente
 gestiona de manera eficiente los flujos urbanos
 a través del proceso en tiempo real de información
-sobre dispositivos, ciudadanos y activos
+sobre dispositivos, ciudadanos y activos. 
 % a partir de datos recopilados de diferentes tipos de fuentes,
-\cite{stubinger_understanding_2020}
-. 
+%\cite{stubinger_understanding_2020}
 
-% La percepción y la abstracción, es decir,
-El "modelado" y el razonamiento sobre modelos
-son capacidades humanas para
-hacer frente, comprender e influir en el entorno
-\cite{Mawr2020}
-.
-%Modelos conceptuales
-% buscan
-Representar conceptualizaciones y abstracciones relevantes del mundo real
-de tal manera que sea posible apoyar la comunicación, discusión, análisis y actividades relacionadas
-\cite{Delcambre2019}
-. 
-
-%% %Los modelos conceptuales
-%% % se comprometen con una conceptualización,
-%% %, es decir, la cosmovisión capturada por esa conceptualización.
-%% Establece Contratos de Sentido,
-%% %es decir,
-%% artefactos que apuntan precisamente
-%% a captar y comunicar un determinado compromiso ontológico
-%% % Es un requisito previo de
-%% % un modelo conceptual que esté
-%% % conectado a una conceptualización que proporcione su semántica conceptual.
-%% \cite{Guarino2020}
-%% .
-
-
-
-\subsection{La Ciudad Inteligente}\label{concepto}
-
-Las experiencias tempranas de ciudades inteligentes se remontan a la década
-de 1970, cuando Los Ángeles realiza el primer proyecto de bigdata urbana.
-Cerca del comienzo del siglo XXI
-el interés aumento significativamente como consecuencia de la mejora
-tecnológica y el crecimiento de la poblacion en áreas urbanas,
-pero a partir de la década de 2010 es cuando este concepto emerge y se comienza a discutir
-\cite{stubinger_understanding_2020}.
+Las experiencias tempranas de ciudades inteligentes se remontan a la década de
+1970, cuando Los Ángeles realiza el primer proyecto de bigdata urbana.  Cerca
+del comienzo del siglo XXI el interés aumento significativamente como
+consecuencia de la mejora tecnológica y el crecimiento de la poblacion en áreas
+urbanas, pero a partir de la década de 2010 es cuando este concepto emerge y se
+comienza a discutir \cite{stubinger_understanding_2020}.
 
 Como primeros esfuerzos 
 algunas organizaciones 
@@ -299,7 +138,7 @@ transformación de ciudades inteligentes
 y
 La Organización Internacional de Normalización (ISO) emitió
 varias normas de requisitos para el desarrollo de comunidades y
-ciudades inteligentes.
+ciudades inteligentes
 %infraestructura
 \cite{aljowder_systematic_2019}.
 
@@ -307,7 +146,7 @@ A medida que
 la ciudad inteligente se despliega, es necesario saber cómo
 gestionar y mantener los recursos de los ecosistemas urbanos
 garantizando la sustentabilidad económica,
-social y ambiental general de estas áreas \cite{aljowder_systematic_2019, stubinger_understanding_2020}.
+social y ambiental general de estas áreas \cite{aljowder_systematic_2019,stubinger_understanding_2020}.
 
 % unir y acortar estos 3 parrafos
 Apesar el concepto ha sido discutido durante varias decadas,
@@ -320,7 +159,7 @@ efectiva describiéndose a sí mismo.
 
 La gran mayoría de la literatura define “ciudad inteligente” como
 infraestructura que cumple las siguientes tres características:
-(i) El grupo objetivo son las ciudades y comunidades,
+(i) el grupo objetivo son las ciudades y comunidades,
 (ii) se mejora la forma de vivir y trabajar en la región,
 (iii) se implementan tecnologías de la información y la comunicación (TIC)
 \cite{stubinger_understanding_2020}.
@@ -342,10 +181,10 @@ una concisa comprensión sobre el dominio.
 %ya que sirve como un terreno común de lo que se trata la ciudad inteligente.
 
 %Una mejor comprensión del concepto,
-La determinación de un modelo conceptual de ciudad inteligente
-habilitará a profesionales, políticos y a la academia
-a establecer mejores estrategias de desarrollo
-y asegurará que que multiples iniciativas estén alineadas.
+
+La determinación de un modelo conceptual de ciudad inteligente habilitará a
+profesionales, políticos y a la academia a establecer mejores estrategias de
+desarrollo y asegurará que que multiples iniciativas estén alineadas.
 
 % estudios
 % donde pueda referirse
@@ -378,14 +217,18 @@ y asegurará que que multiples iniciativas estén alineadas.
 % inteligente y ven este tema desde diferentes perspectivas. 
 % \cite{Anthopoulos2015}.
 
-\subsection{Modelado Conceptual}\label{afirmacion}
+Es llamativo que no se presentó previamente ningún estudio académico
+realice una visión general a gran escala basada en enfoques
+cuantitativos/cualitativos que proporcione una síntesis integral y sistemática
+con perspectiva en las capacidades dinámicas de la Ciudades Inteligentes
+evidenciando la riqueza de la fuente y en paralelo las relaciones con un
+marco conceptual cohesivo y global.
 
-
-\section{RESEARCH METHOD}\label{metodo}
+%\section{Planificación del SMS}
+\section{Metodología}\label{metodo}
 
 Metodológicamente, se procede con la revisión analítica de contenido del estado
-actual del conocimiento \cite{kitchenham_guidelines_2007,
-webster_analyzing_2002, Wolfswinkel2017}.
+actual del conocimiento \cite{kitchenham_guidelines_2007,webster_analyzing_2002,Wolfswinkel2017}.
 
 %Google Scholar
 %% Se Enumera más de XXXX estudios en el campo del "Modelado Conceptual de ciudades
@@ -394,7 +237,7 @@ webster_analyzing_2002, Wolfswinkel2017}.
 %% Esto es mio se puede usar
 %y la dinámica
 Los escritos en este dominio
-son de considerable diversidad
+son de  diversidad considerable
 %una revisión sistemática de la literatura
 para obtener el estado
 actual de la investigación,
@@ -410,12 +253,17 @@ señalar tendencias, hallazgos sustantivos
 % sugerir una agenda de investigación que
 e indicar el curso para estudios futuros.
 
-Es sorprendente que no se presentó previamente ningún estudio académico
-realice una visión general a gran escala basada en enfoques
-cuantitativos/cualitativos que proporcione una síntesis integral y sistemática
-con perspectiva en las capacidades dinámicas de la Ciudades Inteligentes
-evidenciando la riqueza de la fuente y en paralelo las relaciones con un
-marco conceptual cohesivo y global.
+\begin{table}[]
+  \begin{tabular}{|l|l|l|}
+  \hline
+               & Preguntas                                                                      & Motivación \\ \hline
+  \textbf{P}   & ¿Cuál es el estado del arte en el modelado conceptual de Smart Cities?         &            \\ \hline
+  \textbf{PI1} & ¿Qué tipo de contribuciones existen en el modelado conceptual de Smart Cities? &            \\ \hline
+  \textbf{PI2} & ¿En qué dominios se realizaron contribuciones?                                 &            \\ \hline
+  \textbf{PI3} & ¿Qué lenguajes de modelado se utilizan?                                        &            \\ \hline
+  \textbf{PI4} & ¿Qué tipo de investigación existen en los artículos?                           &            \\ \hline
+  \end{tabular}
+  \end{table}
 
 % Con los resultados como prueba de concepto se expone el conocimiento que se
 % puede derivar de las diferentes dimensiones de los estudios y cómo la
@@ -427,28 +275,57 @@ marco conceptual cohesivo y global.
 % objetivo de aportar claridad al tema y contribuir a la
 % investigación científica sobre el área de estudio.
 
-\subsection{Inclusion and exclusion criteria}\label{criterio}
+\section{Desarrollo de Mapeo Sistemático de Literatura}
+
+\subsection{Buscadores}\label{fuentes}
+
+% buscadores
+% Fuentes de busqueda
+
+\subsubsection{IEEE}\label{ieee}
+
+https://ieeexplore.ieee.org/Xplorehelp/ieee-xplore-training/user-tips
+
+https://ieeexplore.ieee.org/search/advanced
+
+https://ieeexplore.ieee.org/search
+
+\subsubsection{ACM}\label{acm}
+
+%https://libraries.acm.org/training-resources/new-dl-features/advanced-search-custom-queries
+
+%ttps://dl.acm.org/journals
+
+cadeba de buqueda ACM
+((Title: "smart city") OR (Title: "smart cities")) AND ((Title: "conceptual"( OR (Title: "model") OR (Title: "modeling"))
+
+\subsubsection{Scopus}\label{scopus}
+
+%https://tutorials.scopus.com/EN/BasicSearch/sc_BasicSearch_textOnly.html
+
+%https://www.scopus.com/sources?zone=TopNavBar&origin=NO%20ORIGIN%20DEFINED
+
+%https://elsevier.libguides.com/Scopus/topical-search
+
+\subsection{Criterios de Inclusion y exclusion}\label{criterio}
 
 Criterios de Inclusion y exclusion.
+% https://books.google.com.ar/books/about/2015_IEEE_First_International_Smart_Citi.html?id=0UEcjwEACAAJ&source=kp_book_description&redir_esc=y
 
-\subsection{Determine search sources}\label{fuentes}
+\subsection{Cadenas de busqueda}\label{cadena}
 
-buscadores
-Fuentes de busqueda
+(( "smart city" OR "smart cities") AND ("conceptual model" OR "conceptual modeling"))
 
-\subsection{Define search string}\label{cadena}
+\subsection{Criterios de busqueda y exclusion}\label{criterios}
 
-Cadena de Busqueda.
+2015 IEEE First International Smart Cities Conference (ISC2)
 
-\subsection{Search and selection}\label{seleccion}
+\subsection{Dimensiones de la Ciudad Inteligente}\label{dimensiones}
 
-Busqueda y selección.
-
-\section{RESULTS ANALYSIS ó Categorization of Smart City Literature ó Findings}\label{resultados}
+% Stubinger habla de categorias
+% \cite{stubinger_understanding_2020}
 
 Wahab habla de Dimensions of smart cities \cite{wahab_systematic_2020}
-
-Stubinger habla de categorias \cite{stubinger_understanding_2020}
 Economy,
 Governance,
 People,
@@ -459,114 +336,67 @@ Living,
 Mobility,
 Water and Waste,
 Security, 
-Agriculture.
-
-%\subsection{Conceptual model of smart cities identified from the scientific literature}\label{sci-lit}
-
-% \lipsum[3-4]
-
-%\subsection{The regions/countries covered by the related studies}\label{regiones}
-
-%\lipsum[3-4]
+Agriculture
+.
 
 
-%\subsection{The frameworks main components}\label{componentes}
 
-%\lipsum[3-4]
+\section{Resultado}\label{resultados}
+%\section{Sintesis del SMS}\label{resultados}
 
-
-%\subsection{Smart city alignment with the Sustainable Development Goals (SDGs)}\label{sustentabilidad}
-
-%\lipsum[2-4]
-
-\section{DISCUSION}\label{discusion}
+%\section{Discusión}\label{discusion}
+\section{Cosideraciones sobre la validez de este estudio}\label{validez}
 
 %\lipsum[1]
 
-
-\section{CONCLUSION}\label{conclucion}
-
-%\lipsum[2-4]
+\section{Conclusiones}\label{conclucion}
 
 
+% \section{BibTeX Entries}
+% 
+% The correct BibTeX entries for the Lecture Notes in Computer Science
+% volumes can be found at the following Website shortly after the
+% publication of the book:
+% \url{http://www.informatik.uni-trier.de/~ley/db/journals/lncs.html}
+% 
+% \subsubsection*{Acknowledgments.} The heading should be treated as a
+% subsubsection heading and should not be assigned a number.
+% 
 
-% To print the credit authorship contribution details
-% \printcredits
+%\section{The References Section}\label{references}
 
-%% Loading bibliography style file
-%\bibliographystyle{model1-num-names}
-%\bibliographystyle{cas-model2-names}
-
-% Loading bibliography database
-%\bibliography{}
 \bibliography{cm-sc.bib}
 \bibliographystyle{plain}
 
-%% Biography
-%\bio{}
-%% Here goes the biography details.
-%\endbio
-%
-%\bio{pic1}
-%% Here goes the biography details.
-%\endbio
+%\begin{thebibliography}{4}
+
+%\end{thebibliography}
+ 
+ 
+% \section*{Appendix: Springer-Author Discount}
+% 
+% LNCS authors are entitled to a 33.3\% discount off all Springer
+% publications. Before placing an order, the author should send an email, 
+% giving full details of his or her Springer publication,
+% to \url{orders-HD-individuals@springer.com} to obtain a so-called token. This token is a
+% number, which must be entered when placing an order via the Internet, in
+% order to obtain the discount.
+% 
+% \section{Checklist of Items to be Sent to Volume Editors}
+% Here is a checklist of everything the volume editor requires from you:
+% 
+% 
+% \begin{itemize}
+% \settowidth{\leftmargin}{{\Large$\square$}}\advance\leftmargin\labelsep
+% \itemsep8pt\relax
+% \renewcommand\labelitemi{{\lower1.5pt\hbox{\Large$\square$}}}
+% 
+% \item The final \LaTeX{} source files
+% \item A final PDF file
+% \item A copyright form, signed by one author on behalf of all of the
+% authors of the paper.
+% \item A readme giving the name and email address of the
+% corresponding author.
+% \end{itemize}
 
 \end{document}
-
-
-% Numbered list
-% Use the style of numbering in square brackets.
-% If nothing is used, default style will be taken.
-%\begin{enumerate}[a)]
-%\item 
-%\item 
-%\item 
-%\end{enumerate} 
-
-% Unnumbered list
-%\begin{itemize}
-%\item 
-%\item 
-%\item 
-%\end{itemize} 
-
-% Description list
-%\begin{description}
-%\item[]
-%\item[] 
-%\item[] 
-%\end{description} 
-
-%% % Figure
-%% \begin{figure}[<options>]
-%% 	\centering
-%% 		\includegraphics[<options>]{}
-%% 	 \caption{}\label{fig1}
-%% \end{figure}
-%% 
-%% 
-%% \begin{table}[<options>]
-%% \caption{}\label{tbl1}
-%% \begin{tabular*}{\tblwidth}{@{}LL@{}}
-%% \toprule
-%% & \\ % Table header row
-%% \midrule
-%% & \\
-%% & \\
-%% & \\
-%% & \\
-%% \bottomrule
-%% \end{tabular*}
-%% \end{table}
-
-% Uncomment and use as the case may be
-%\begin{theorem} 
-%\end{theorem}
-
-% Uncomment and use as the case may be
-%\begin{lemma} 
-%\end{lemma}
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
