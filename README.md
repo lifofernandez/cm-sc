@@ -12,6 +12,10 @@ lualatex cm-sc.txt
 https://medium.com/@zhelinchen91/how-to-convert-from-latex-to-ms-word-with-pandoc-f2045a762293 
 
 ```
+pandoc cm-sc.tex  --citeproc --bibliography=cm-sc.bib --reference-doc="CACIC (MCSI 2022) - CM-SC.docx" -o cm-sc.docx
+```
+---
+```
 pandoc cm-sc.tex  --reference-doc="CACIC (MCSI 2022) - CM-SC.docx" -o cm-sc.docx  
 ```
 
