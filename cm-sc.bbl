@@ -15,6 +15,12 @@ Lois~M.L. Delcambre, Stephen~W. Liddle, Oscar Pastor, and Veda~C. Storey.
   Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 11877
   LNCS:40--57, 2019.
 
+\bibitem{Guarino2020}
+Nicola Guarino, Giancarlo Guizzardi, and John Mylopoulosc.
+\newblock On the philosophical foundations of conceptual models.
+\newblock {\em Frontiers in Artificial Intelligence and Applications},
+  321:1--15, 12 2020.
+
 \bibitem{kitchenham_guidelines_2007}
 B.~Kitchenham, B.~Kitchenham, and S.~Charters.
 \newblock Guidelines for performing {Systematic} {Literature} {Reviews} in
@@ -25,12 +31,6 @@ B.~Kitchenham, B.~Kitchenham, and S.~Charters.
 Heinrich~C. Mayr and Bernhard Thalheim.
 \newblock The triptych of conceptual modeling.
 \newblock {\em Software and Systems Modeling}, 20:7--24, 11 2020.
-
-\bibitem{Okoli2015}
-Chitu Okoli.
-\newblock A guide to conducting a standalone systematic literature review.
-\newblock {\em Communications of the Association for Information Systems},
-  37:43, 11 2015.
 
 \bibitem{stubinger_understanding_2020}
 Johannes Stübinger and Lucas Schneider.
@@ -47,17 +47,5 @@ N.~S.~N. Wahab, T.~W. Seow, I.~S.~M. Radzuan, and S.~Mohamed.
 \newblock {\em IOP Conference Series: Earth and Environmental Science},
   498(1):012087, May 2020.
 \newblock Publisher: IOP Publishing.
-
-\bibitem{webster_analyzing_2002}
-Jane Webster and Richard~T. Watson.
-\newblock {Analyzing} {the} {past} {to} {prepare} {for} {the} {future}:
-  {Writing} {a} {literature} {review}.
-\newblock {\em MIS Quarterly}, 26(2), 2002.
-
-\bibitem{Wolfswinkel2017}
-Joost~F. Wolfswinkel, Elfi Furtmueller, and Celeste~P.M. Wilderom.
-\newblock Using grounded theory as a method for rigorously reviewing
-  literature.
-\newblock {\em https://doi.org/10.1057/ejis.2011.51}, 22:45--55, 2017.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  19 MAY 2022 09:27
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  22 MAY 2022 11:23
  restricted system commands enabled.
 **cm-sc.tex
 (./cm-sc.tex
@@ -426,8 +426,8 @@ LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 114.
 
 
 {C:/Users/pc2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
  [2]
 (./cm-sc.bbl
 LaTeX Info: Redefining \. on input line 10.
@@ -444,8 +444,8 @@ Underfull \hbox (badness 4060) in paragraph at lines 58--62
  []
 
 )
-LaTeX Info: Redefining \. on input line 418.
-LaTeX Info: Redefining \% on input line 418.
+LaTeX Info: Redefining \. on input line 420.
+LaTeX Info: Redefining \% on input line 420.
  [4] (./cm-sc.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
