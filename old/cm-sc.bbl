@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{aljowder_systematic_2019}
+Aljowder, T., Ali, M., Kurnia, S.: Systematic literature review of the smart
+  city maturity model. 2019 International Conference on Innovation and
+  Intelligence for Informatics, Computing, and Technologies, 3ICT 2019  (Sep
+  2019), iSBN: 9781728130125 Publisher: Institute of Electrical and Electronics
+  Engineers Inc.
+
+\bibitem{Delcambre2019}
+Delcambre, L.M., Liddle, S.W., Pastor, O., Storey, V.C.: Characterizing
+  conceptual modeling research. Lecture Notes in Computer Science (including
+  subseries Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)  11877 LNCS,  40--57 (2019)
+
+\bibitem{Guarino2020}
+Guarino, N., Guizzardi, G., Mylopoulosc, J.: On the philosophical foundations
+  of conceptual models. Frontiers in Artificial Intelligence and Applications
+  321,  1--15 (12 2020),
+  \url{https://ebooks.iospress.nl/doi/10.3233/FAIA200002}
+
+\bibitem{kitchenham_guidelines_2007}
+Kitchenham, B., Kitchenham, B., Charters, S.: Guidelines for performing
+  {Systematic} {Literature} {Reviews} in {Software} {Engineering}. -  (2007),
+  \url{https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.471}
+
+\bibitem{Mawr2020}
+Mayr, H.C., Thalheim, B.: The triptych of conceptual modeling. Software and
+  Systems Modeling  20,  7--24 (11 2020),
+  \url{https://dl.acm.org/doi/abs/10.1007/s10270-020-00836-z}
+
+\bibitem{stubinger_understanding_2020}
+Stübinger, J., Schneider, L.: Understanding {Smart} {City}—{A}
+  {Data}-{Driven} {Literature} {Review}. Sustainability 2020, Vol. 12, Page
+  8460  12(20),  8460 (Oct 2020),
+  \url{https://www.mdpi.com/2071-1050/12/20/8460/htm
+  https://www.mdpi.com/2071-1050/12/20/8460}, publisher: Multidisciplinary
+  Digital Publishing Institute
+
+\bibitem{wahab_systematic_2020}
+Wahab, N.S.N., Seow, T.W., Radzuan, I.S.M., Mohamed, S.: A {Systematic}
+  {Literature} {Review} on {The} {Dimensions} of {Smart} {Cities}. IOP
+  Conference Series: Earth and Environmental Science  498(1),  012087 (May
+  2020), \url{https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012087
+  https://iopscience.iop.org/article/10.1088/1755-1315/498/1/012087/meta},
+  publisher: IOP Publishing
+
+\end{thebibliography}

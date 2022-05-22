@@ -384,7 +384,9 @@ Agriculture
 %\section{The References Section}\label{references}
 
 \bibliography{cm-sc.bib}
-\bibliographystyle{plain}
+% \bibliographystyle{plain}
+%\bibliographystyle{splncs03}
+\bibliographystyle{ieeetr}
 
 %\begin{thebibliography}{4}
 
@@ -420,9 +422,6 @@ Agriculture
 \end{document}
 
 % https://medium.com/@zhelinchen91/how-to-convert-from-latex-to-ms-word-with-pandoc-f2045a762293 
-% pandoc mydoc.tex --bibliography=myref.bib -o mydoc.docx
-% pandoc mydoc.tex --bibliography=myref.bib --reference-docx=IEEE_template.doc -o mydoc.docx
-% pandoc mydoc.tex --filter pandoc-crossref --bibliography=myref.bib --reference-docx=IEEE_template.doc -o mydoc.docx
 
-
-% pandoc cm-sc.tex  --bibliography=cm-sc.bib --reference-doc="CACIC (MCSI 2022) - CM-SC.docx" -o cm-sc.docx 
+% pandoc cm-sc.tex  --bibliography=cm-sc.bib --reference-doc="CACIC (MCSI 2022) - CM-SC.docx" -o cm-sc.docx  
+% pandoc cm-sc.tex  --filter pandoc-crossref --bibliography=cm-sc.bib --reference-doc="CACIC (MCSI 2022) - CM-SC.docx" -o cm-sc.docx 
