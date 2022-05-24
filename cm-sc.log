@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  22 MAY 2022 13:38
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.5.18)  24 MAY 2022 09:54
  restricted system commands enabled.
 **cm-sc.tex
 (./cm-sc.tex
@@ -419,23 +419,68 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
 (C:/Users/pc2/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Citation `Delcambre2019' on page 1 undefined on input line 94.
+
+
+LaTeX Warning: Citation `Mawr2020' on page 1 undefined on input line 102.
+
+
+LaTeX Warning: Citation `Guarino2020' on page 1 undefined on input line 114.
+
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 1 undefined on i
+nput line 129.
+
 [1
 
 
 {C:/Users/pc2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: Citation `aljowder_systematic_2019' on page 2 undefined on input
+ line 136.
+
+
+LaTeX Warning: Citation `aljowder_systematic_2019' on page 2 undefined on input
+ line 141.
+
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 2 undefined on i
+nput line 141.
+
+
+LaTeX Warning: Citation `wahab_systematic_2020' on page 2 undefined on input li
+ne 144.
+
+
+LaTeX Warning: Citation `stubinger_understanding_2020' on page 2 undefined on i
+nput line 153.
+
+
+LaTeX Warning: Citation `kitchenham_guidelines_2007' on page 2 undefined on inp
+ut line 215.
+
 LaTeX Info: Redefining \. on input line 261.
 LaTeX Info: Redefining \% on input line 261.
- [2]
+[2]
+
+LaTeX Warning: Citation `wahab_systematic_2020' on page 3 undefined on input li
+ne 350.
+
 (./cm-sc.bbl
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  [3])
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
+LaTeX Info: Redefining \. on input line 411.
+LaTeX Info: Redefining \% on input line 411.
  [4] (./cm-sc.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
-))
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
 
 Here is how much of LuaTeX's memory you used:
  4214 strings out of 477742
@@ -443,14 +488,14 @@ Here is how much of LuaTeX's memory you used:
  1532 words of node memory still in use:
    6 hlist, 1 vlist, 1 rule, 22 disc, 12 glue, 9 kern, 101 glyph, 15 attribute, 
 53 glue_spec, 9 attribute_list, 1 write nodes
-   avail lists: 1:1,2:644,3:200,4:21,5:250,6:35,7:8239,8:63,9:307,10:17,11:1199
+   avail lists: 1:1,2:644,3:200,4:21,5:250,6:35,7:8239,8:63,9:306,10:17,11:1199
  24829 multiletter control sequences out of 65536+600000
  56 fonts using 4027319 bytes
  55i,8n,60p,271b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman
 5-regular.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/pub
-lic/lm/lmroman10-bold.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/
-opentype/public/lm/lmroman10-italic.otf><//?/c:/users/pc2/appdata/local/programs
+lic/lm/lmroman10-italic.otf><//?/c:/users/pc2/appdata/local/programs/miktex/font
+s/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/pc2/appdata/local/programs
 /miktex/fonts/opentype/public/lm/lmroman9-italic.otf><//?/c:/users/pc2/appdata/l
 ocal/programs/miktex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/users/pc
 2/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono9-regular.otf><//
@@ -458,7 +503,7 @@ ocal/programs/miktex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/users/pc
 egular.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/opentype/public
 /lm/lmroman10-regular.otf><//?/c:/users/pc2/appdata/local/programs/miktex/fonts/
 opentype/public/lm/lmroman12-bold.otf>
-Output written on cm-sc.pdf (4 pages, 66155 bytes).
+Output written on cm-sc.pdf (4 pages, 66153 bytes).
 
 PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

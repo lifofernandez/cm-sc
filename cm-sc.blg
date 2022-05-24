@@ -1,5 +1,48 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'cm-sc.blg'
-[167] biber-MSWIN64:340> INFO - === 
-[758] Utils.pm:409> ERROR - Cannot find 'cm-sc.bcf'!
-[759] Biber.pm:135> INFO - ERRORS: 1
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cm-sc.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Database file #1: cm-sc.bib
+You've used 7 entries,
+            1876 wiz_defined-function locations,
+            527 strings with 5154 characters,
+and the built_in function-call counts, 1744 in all, are:
+= -- 170
+> -- 77
+< -- 0
++ -- 28
+- -- 21
+* -- 127
+:= -- 266
+add.period$ -- 10
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 92
+empty$ -- 148
+format.name$ -- 21
+if$ -- 426
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 27
+num.names$ -- 7
+pop$ -- 12
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 68
+stack$ -- 0
+substring$ -- 70
+swap$ -- 41
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 15
+width$ -- 8
+write$ -- 74
